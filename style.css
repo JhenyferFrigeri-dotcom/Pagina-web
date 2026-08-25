@@ -23,4 +23,13 @@
 
         .artigo-autor {
             font-weight: bold;
-        }
+        } 
+
+        body.modo-escuro {
+    background-color: rgb(51, 0, 85);
+    color: white;
+}
+
+.escondido {
+    display: none;
+}
