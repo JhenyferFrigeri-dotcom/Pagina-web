@@ -2,36 +2,45 @@
  body {
     background-color: #d4b0f1;
 }
- 
- header {
-            background-color: rgb(175, 113, 245);
-            color: #45167a;
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 16px;
-        }
 
-        main {
-            background-color: #d6b6eb;
-            color: rgb(104, 39, 189);
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 16px;
-            display: flex;
-        }
+header {
+    background-color: rgb(175, 113, 245);
+    color: #45167a;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px;
+}
 
-        img {
-            width: 80px;
-            height: 80px;
-        }
+main {
+    background-color: #d6b6eb;
+    color: rgb(104, 39, 189);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-        .artigo-autor {
-            font-weight: bold;
-        } 
+img {
+    width: 80px;
+    height: 80px;
+}
 
-        body.modo-escuro {
+.artigo-autor {
+    font-weight: bold;
+} 
+
+/* MODO ESCURO */
+body.modo-escuro {
     background-color: rgb(51, 0, 85);
+    color: white;
+}
+
+body.modo-escuro header,
+body.modo-escuro main {
+    background-color: #290446;
     color: white;
 }
 
