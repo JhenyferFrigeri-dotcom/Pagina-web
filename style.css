@@ -1,54 +1,129 @@
- 
- body {
-    background-color: #d4b0f1;
+body {
+    background-color: #ffffff;
+    color: #45167a;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 10px;
 }
 
 header {
-    background-color: rgb(175, 113, 245);
-    color: #45167a;
-    text-align: center;
+    background-color: #d4b0f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     max-width: 800px;
     margin: 0 auto;
-    padding: 16px;
+    padding: 15px;
+}
+
+.img-header {
+    width: 60px;
+    height: auto;
+}
+
+.header-texto {
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #45167a;
+}
+
+header p {
+    margin: 5px 0 0 0;
 }
 
 main {
-    background-color: #d6b6eb;
-    color: rgb(104, 39, 189);
-    max-width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 20px;
+    text-align: center;
 }
 
-img {
-    width: 80px;
-    height: 80px;
+.post {
+    background-color: #ffffff;
+    color: #45167a;
+    padding: 15px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.post h2 {
+    color: #d4b0f1;
+    margin-top: 0;
 }
 
 .artigo-autor {
     font-weight: bold;
-} 
-
-button {
-    background-color: rgb(140, 10, 226);
-    color: white;
+    color: #d4b0f1;
 }
 
-/* MODO ESCURO */
+.img-post {
+    width: 70px;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+#botao-curtir {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.grade-projetos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.caixa-projeto {
+    background-color: #d4b0f1;
+    color: #45167a;
+    padding: 10px;
+    width: 45%;
+    box-sizing: border-box;
+}
+
+.caixa-projeto img {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+}
+
+.caixa-projeto p {
+    margin: 8px 0 0 0;
+    font-size: 14px;
+}
+
+.espaco-texto {
+    margin: 15px 0;
+    color: #d4b0f1;
+}
+
+.subtitulo-nivel {
+    color: #d4b0f1;
+    margin-top: 20px;
+}
+
 body.modo-escuro {
-    background-color: rgb(51, 0, 85);
-    color: white;
+    background-color: #121212;
 }
 
-body.modo-escuro header,
 body.modo-escuro main {
-    background-color: #290446;
-    color: white;
+    background-color: #1a1a1a;
 }
 
-.escondido {
-    display: none;
+body.modo-escuro header {
+    background-color: #290446;
+    color: #ffffff;
+}
+
+body.modo-escuro header h1 {
+    color: #ffffff;
 }
