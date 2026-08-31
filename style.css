@@ -1,129 +1,110 @@
 body {
-    background-color: #ffffff;
-    color: #45167a;
-    font-family: sans-serif;
+    background-color: #d4b0f1;
     margin: 0;
     padding: 10px;
+    font-family: sans-serif;
 }
 
 header {
-    background-color: #d4b0f1;
+    background-color: rgb(175, 113, 245);
+    color: #45167a;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.header-conteudo {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 15px;
 }
 
-.img-header {
+.img-topo {
     width: 60px;
     height: auto;
 }
 
-.header-texto {
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    color: #45167a;
-}
-
-header p {
-    margin: 5px 0 0 0;
-}
-
 main {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #d6b6eb;
+    color: rgb(104, 39, 189);
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bloco-post {
     text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
-.post {
-    background-color: #ffffff;
-    color: #45167a;
-    padding: 15px;
-    margin-bottom: 25px;
-    text-align: left;
+/* AJUSTE DAS IMAGENS */
+img {
+    max-width: 100%;
+    height: auto;
+    background-color: #ffffff; /* Garante fundo claro para imagens com transparência */
 }
 
-.post h2 {
-    color: #d4b0f1;
-    margin-top: 0;
+.bloco-post img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
 }
 
 .artigo-autor {
     font-weight: bold;
-    color: #d4b0f1;
-}
+} 
 
-.img-post {
-    width: 70px;
-    height: auto;
-    display: block;
-    margin: 10px 0;
-}
-
-#botao-curtir {
-    background-color: #ffffff;
-    border: 1px solid #ccc;
-    cursor: pointer;
-    padding: 5px 10px;
-}
-
-.grade-projetos {
+/* ESTRUTURA DOS CARDS DE TUTORIAIS E IDEIAS */
+.linha-cards {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
+    width: 100%;
     margin-bottom: 15px;
 }
 
-.caixa-projeto {
-    background-color: #d4b0f1;
-    color: #45167a;
+.card {
+    background-color: #e2cbf7;
+    border: 1px solid rgb(175, 113, 245);
     padding: 10px;
     width: 45%;
     box-sizing: border-box;
+    text-align: center;
 }
 
-.caixa-projeto img {
+.card img {
     width: 100%;
-    height: auto;
-    background-color: #ffffff;
+    height: 120px;
+    object-fit: cover;
 }
 
-.caixa-projeto p {
-    margin: 8px 0 0 0;
-    font-size: 14px;
+.texto-meio, .subtitulo {
+    font-weight: bold;
+    margin: 10px 0;
 }
 
-.espaco-texto {
-    margin: 15px 0;
-    color: #d4b0f1;
-}
-
-.subtitulo-nivel {
-    color: #d4b0f1;
-    margin-top: 20px;
-}
-
+/* MODO ESCURO */
 body.modo-escuro {
-    background-color: #121212;
+    background-color: rgb(51, 0, 85);
+    color: white;
 }
 
+body.modo-escuro header,
 body.modo-escuro main {
-    background-color: #1a1a1a;
-}
-
-body.modo-escuro header {
     background-color: #290446;
-    color: #ffffff;
+    color: white;
 }
 
-body.modo-escuro header h1 {
-    color: #ffffff;
+body.modo-escuro .card {
+    background-color: #3b0a61;
+    border-color: #5d1796;
+}
+
+.escondido {
+    display: none;
 }
