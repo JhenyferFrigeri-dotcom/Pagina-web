@@ -1,17 +1,17 @@
-
+/* estilizando o corpo da pagina no geral */
 body {
-    background-color: #d4b0f1;
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    width: 100%;
+    background-color: #d4b0f1; /* define cor do fundo */
+    margin: 0; /* tira a margem padrao */
+    padding: 0; /* tira espacamento interno q e padrao */
+    font-family: sans-serif; /* fonte da letra */
+    width: 100%;/* largura da tela no maximo */
 }
-
+/* alinha o botao do topo */
 .topo-botao {
-    text-align: right;
-    padding: 10px 20px 0 0;
+    text-align: right;/* deixa na direira */
+    padding: 10px 20px 0 0;/* cria espaçamento */
 }
-
+/* estiliza o botao que muda para tema escuro */
 #botao-escuro {
     background-color: #45167a;
     color: white;
@@ -19,7 +19,7 @@ body {
     padding: 8px 14px;
     font-weight: bold;
 }
-
+/* estiliza o cabeçario da pagina */
 header {
     background-color: rgb(175, 113, 245);
     color: #45167a;
@@ -28,7 +28,7 @@ header {
     padding: 20px 0;
     box-sizing: border-box;
 }
-
+/* organizaçao do cabeçalho */
 .header-conteudo {
     display: flex;
     justify-content: space-around;
@@ -37,77 +37,77 @@ header {
     margin: 0 auto;
     padding: 0 20px;
 }
-
+/* estilizando a imagem do topo */
 .img-topo {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
+    width: 80px;/* largura da imagem */
+    height: 80px;/* altura da imagem */
+    object-fit: contain; /* ajusta a imagem sem cortar */
     background-color: #ffffff;
 }
-
+/* titulo principal do topo */
 .header-texto h1 {
-    margin: 0;
+    margin: 0;/* tira margem padrao */
     color: #45167a;
 }
-
+/*estiliza o subtitulo dentro do cabeçario */
 .subtitulo-header {
     margin: 5px 0 0 0;
 }
-
+/* area com as informacoes do cabeçario */
 .header-informacoes {
     max-width: 800px;
     margin: 15px auto 0 auto;
     padding: 0 20px;
 }
-
+/* estiliza nome da autora e do artigo */
 .artigo-autor {
     font-weight: bold;
     margin-bottom: 5px;
 }
-
+/* estiliza mensagem de boas vindas */
 .boas-vindas {
     margin: 8px 0;
 }
-
+/* estiliza o botao de curtir */
 #botao-curtir {
     background-color: #ffffff;
     border: 1px solid #45167a;
     color: #45167a;
-    cursor: pointer;
+    cursor: pointer; /* pra ficar com aquela maozinha do mouse quando passa por cima */
     padding: 6px 12px;
     font-weight: bold;
 }
-
+/* estiliza o conteudo principal da pagina*/
 main {
     background-color: #d6b6eb;
     color: rgb(104, 39, 189);
     width: 100%;
     margin: 0;
     padding: 30px 20px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    box-sizing: border-box;/* deixa o padding dentro do espaço de largura */
+    display: flex; /* deixa o ainhamento mais flexivel */
+    flex-direction: column; /* deixa as coisas em coluna */
+    align-items: center;/*alinha as coisas no centro */
 }
-
+/* estiliza titulo h2 dentro do main */
 main h2 {
     margin: 25px 0 15px 0;
 }
-
+/* deixa o video certo na pagina */
 iframe {
     max-width: 900px;
     border: none;
 }
-
+/* estiliza cada receira de croche */
 .linha-cards {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+    display: flex;/* alinha lado a laddo*/
+    justify-content: center; /* centraliza */
+    gap: 20px;/* espacamento entre as receitas */
     width: 100%;
     max-width: 900px;
     margin-bottom: 15px;
 }
-
+/* estilo de cada recita */
 .card {
     background-color: #e2cbf7;
     padding: 10px;
@@ -115,35 +115,30 @@ iframe {
     box-sizing: border-box;
     text-align: center;
 }
-
+/* estiliza a imagem das recitas */
 .card img {
     width: 100%;
-    height: 160px;
+    height: 180px;
     object-fit: cover;
     background-color: #ffffff;
 }
-
-.texto-meio, .subtitulo {
-    font-weight: bold;
-    margin: 15px 0;
-}
-
+/* estiliza o modo escuro */
 body.modo-escuro {
     background-color: rgb(51, 0, 85);
     color: white;
 }
-
+/* estiliza o modo escuro do cabeçario e da area principal*/
 body.modo-escuro header,
 body.modo-escuro main {
     background-color: #290446;
     color: white;
 }
-
+/* estiliza o botao do modo escuro */
 body.modo-escuro #botao-escuro {
     background-color: rgb(175, 113, 245);
     color: #290446;
 }
-
+/* estiliza o modo escuro para os cartoes */
 body.modo-escuro .card {
     background-color: #3b0a61;
 }
