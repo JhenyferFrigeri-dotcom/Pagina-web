@@ -6,7 +6,6 @@ body {
     width: 100%;
 }
 
-
 .topo-botao {
     text-align: right;
     padding: 10px 20px 0 0;
@@ -17,11 +16,9 @@ body {
     color: white;
     border: none;
     padding: 8px 14px;
-    border-radius: 6px;
     font-weight: bold;
 }
 
-/* HEADER COMPLETO */
 header {
     background-color: rgb(175, 113, 245);
     color: #45167a;
@@ -45,18 +42,15 @@ header {
     height: 80px;
     object-fit: contain;
     background-color: #ffffff;
-    border-radius: 8px;
 }
 
 .header-texto h1 {
     margin: 0;
-    font-size: 2.2em;
     color: #45167a;
 }
 
 .subtitulo-header {
     margin: 5px 0 0 0;
-    font-size: 1.1em;
 }
 
 .header-info {
@@ -67,7 +61,6 @@ header {
 
 .artigo-autor {
     font-weight: bold;
-    font-size: 1.1em;
     margin-bottom: 5px;
 }
 
@@ -81,11 +74,9 @@ header {
     color: #45167a;
     cursor: pointer;
     padding: 6px 12px;
-    border-radius: 5px;
     font-weight: bold;
 }
 
-/* CONTEÚDO PRINCIPAL (TELA INTEIRA) */
 main {
     background-color: #d6b6eb;
     color: rgb(104, 39, 189);
@@ -99,16 +90,14 @@ main {
 }
 
 main h2 {
-    font-size: 1.8em;
     margin: 25px 0 15px 0;
 }
 
 iframe {
     max-width: 900px;
-    border-radius: 8px;
+    border: none;
 }
 
-/* CARDS DE TUTORIAIS E IDEIAS */
 .linha-cards {
     display: flex;
     justify-content: center;
@@ -120,12 +109,10 @@ iframe {
 
 .card {
     background-color: #e2cbf7;
-    border: 2px solid rgb(175, 113, 245);
     padding: 10px;
     width: 48%;
     box-sizing: border-box;
     text-align: center;
-    border-radius: 6px;
 }
 
 .card img {
@@ -138,10 +125,8 @@ iframe {
 .texto-meio, .subtitulo {
     font-weight: bold;
     margin: 15px 0;
-    font-size: 1.1em;
 }
 
-/* MODO ESCURO */
 body.modo-escuro {
     background-color: rgb(51, 0, 85);
     color: white;
@@ -160,5 +145,4 @@ body.modo-escuro #botao-escuro {
 
 body.modo-escuro .card {
     background-color: #3b0a61;
-    border-color: #5d1796;
 }
