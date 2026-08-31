@@ -15,7 +15,7 @@ header {
 main {
     background-color: #d6b6eb;
     color: rgb(104, 39, 189);
-    max-width: 800px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 16px;
     display: flex;
